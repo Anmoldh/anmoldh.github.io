@@ -1,0 +1,39 @@
+body{
+    background-color: #0ECB5F;
+}
+
+.playbtn{
+    margin-left: 65%;
+    margin-top: -30%;
+}
+
+.optionsbtn{
+    margin-left: 65%;
+}
+
+.exitbtn{
+    margin-left: 65%;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: #0ECB5F;
+    color: black;
+}
+
+footer{
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    margin-left: 43vw;
+    margin-top: 35vh;
+    pointer-events: none;
+}

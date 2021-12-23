@@ -4,7 +4,9 @@ body{
 
 .playbtn{
     margin-left: 65%;
+    margin-right: auto;
     margin-top: -30%;
+    margin-bottom: auto;
 }
 
 .optionsbtn{
@@ -27,6 +29,7 @@ button{
 button:hover{
     background-color: #0ECB5F;
     color: black;
+    transform: scale(1.5);
 }
 
 footer{

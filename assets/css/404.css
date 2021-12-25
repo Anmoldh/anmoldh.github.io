@@ -3,18 +3,24 @@ body{
     pointer-events:none
 }
 
-#home{
+#homegif{
+    width: 35%;
+    height: auto;
     float: left;
 }
 
-#error{
+#errorgif{
+    width: 35%;
+    height: auto;
     float: right;
 }
 
 .wip{
-    position: absolute;
-    top: 80vh;
-    bottom: 20vh;
-    left: 30vw;
-    right: 30vw;
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
 }

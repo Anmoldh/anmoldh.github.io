@@ -1,42 +1,52 @@
 body{
     background-color: #0ECB5F;
+    background-image: linear-gradient(to right, #0ECB5F, #0ECB5F, #3bf023);
+}
+
+#homegif{
+    width: 35%;
+    height: auto;
 }
 
 .playbtn{
-    margin-left: 65%;
-    margin-right: auto;
-    margin-top: -30%;
+    margin-left: 55%;
+    margin-right: 5%;
+    margin-top: -25%;
     margin-bottom: auto;
 }
 
 .optionsbtn{
-    margin-left: 65%;
+    margin-left: 55%;
+    margin-right: 5%;
 }
 
 .exitbtn{
-    margin-left: 65%;
+    margin-left: 55%;
+    margin-right: 5%;
 }
 
 button{
     background-color: transparent;
     color: white;
-    font-size: 35px;
+    font-size: 80%;
     font-family:'Times New Roman', Times, serif;
     border-radius: 8px;
     transition-duration: 0.5s;
+    width: 80%;
 }
 
 button:hover{
     background-color: #0ECB5F;
     color: black;
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 footer{
     font-size: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    margin-left: 43vw;
-    margin-top: 35vh;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    text-align: center;
     pointer-events: none;
 }

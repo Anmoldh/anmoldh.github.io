@@ -1,0 +1,62 @@
+body{
+    background-color: #0ECB5F;
+}
+
+#homegif{
+    width: 35%;
+    height: auto;
+}
+
+h1{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+.optionsflex{
+    background-color: #0e66cb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+@media (max-width: 800px){
+    .optionsflex{
+        flex-direction: column;
+    }
+}
+
+.optionsflex > div{
+    background-color: #cb0eab;
+    color: white;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.gfxform, .lvlform{
+    font-size: 50%;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    font-size: 80%;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #0ECB5F;
+    color: black;
+    transform: scale(1.25);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flap 'n' Fly | Options</title>
+        <meta charset="UTF-8">
+        <meta content="description" content="Scaled Down Flappy Bird">
+        <meta name="author" content="Anmol, Agrim, Aman, Archit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/options.css">
+    </head>
+
+    <body>
+        <div class="logo">
+            <img src="assets/images/home logo.gif" id="homegif">
+        </div>
+
+        <h1>OPTIONS</h1>
+
+        <div class="optionsflex">
+            <div class="graphics">
+                <p>Graphics</p>
+                <div class="gfxform">
+                    <form>
+                        <input type="radio" id="lowgfx" name="gfx" value="Low">
+                        <label for="lowgfx">Low</label>
+                        <input type="radio" id="medgfx" name="gfx" value="Medium">
+                        <label for="medgfx">Medium</label>
+                        <input type="radio" id="highgfx" name="gfx" value="High">
+                        <label for="highgfx">High</label>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <p>Level</p>
+                <div class="lvlform">
+                    <form>
+                        <input type="radio" id="easy" name="lvl" value="Easy">
+                        <label for="easy">Easy</label>
+                        <input type="radio" id="normal" name="lvl" value="Normal">
+                        <label for="normal">Normal</label>
+                        <input type="radio" id="hard" name="lvl" value="Hard">
+                        <label for="hard">Hard</label>
+                    </form>
+                </div>
+            </div>
+            <div class="savebtn">
+                    <h1><button onclick="savealert()">Save</button></h1>
+                    <!-- JS Alert/ Script to be Removed later -->
+                    <script>
+                        function savealert() {
+                          alert("Saving options doesn't work right now, We are trying our best.");
+                        }
+                    </script>
+            </div>
+        </div>
+    </body>
+</html>

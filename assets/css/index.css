@@ -11,6 +11,12 @@ body{
     justify-content: center;
 }
 
+@media (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+}
+
 .container > div{
     text-align: center;
     margin: 15px;
@@ -23,12 +29,6 @@ body{
 .btns{
     flex: 1;
     padding: 10%;
-}
-
-@media (max-width: 800px){
-    .container{
-        flex-direction: column;
-    }
 }
 
 img{

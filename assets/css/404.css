@@ -3,20 +3,29 @@ body{
     pointer-events:none
 }
 
-#homegif{
-    width: 35%;
-    height: auto;
-    float: left;
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#errorgif{
-    width: 35%;
-    height: auto;
-    float: right;
+@media (max-width: 800px){
+    .logo{
+        flex-direction: column;
+    }
+}
+
+.logo > div{
+    text-align: center;
+}
+
+img{
+    width: 80%;
 }
 
 .wip{
-    font-size: 100%;
+    font-size: 120%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: fixed;
     top: 90%;

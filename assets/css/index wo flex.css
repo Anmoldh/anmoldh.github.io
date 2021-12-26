@@ -3,36 +3,26 @@ body{
     background-image: linear-gradient(to right, #0ECB5F, #0ECB5F, #3bf023);
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+#homegif{
+    width: 35%;
+    height: auto;
 }
 
-.container > div{
-    text-align: center;
-    margin: 15px;
+.playbtn{
+    margin-left: 55%;
+    margin-right: 5%;
+    margin-top: -25%;
+    margin-bottom: auto;
 }
 
-.logo{
-    flex: 1;
+.optionsbtn{
+    margin-left: 55%;
+    margin-right: 5%;
 }
 
-.btns{
-    flex: 1;
-    padding: 10%;
-}
-
-@media (max-width: 800px){
-    .container{
-        flex-direction: column;
-    }
-}
-
-img{
-    width: 100%;
+.exitbtn{
+    margin-left: 55%;
+    margin-right: 5%;
 }
 
 button{
@@ -42,19 +32,19 @@ button{
     font-family:'Times New Roman', Times, serif;
     border-radius: 8px;
     transition-duration: 0.5s;
-    width: 100%;
+    width: 80%;
 }
 
 button:hover{
     background-color: #0ECB5F;
     color: black;
-    transform: scale(1.2);
+    transform: scale(1.25);
 }
 
 footer{
     font-size: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    position: fixed;
     top: 90%;
     width: 100%;
     text-align: center;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flap 'n' Fly | Donation</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Scaled Down Flappy Bird">
+        <meta name="author" content="Anmol, Agrim, Aman, Archit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/donation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="navCont">
+            <div class="topNav">
+                <h1 id="textLogo">Flap 'n' Fly</h1>
+                <div class="topnavBtns">
+                    <a href="index.html">Home</a>
+                    <a href="#donate" class="active">Donate us</a>
+                    <a href="#leaderboard">Leaderboard</a>
+                    <a href="#contact">Contact</a>
+                    <a href="index.html#about">About</a>
+                    <!-- <a href="#account">Account</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="pageContent">
+            <div class="gratitude">
+                <h2>We ask you, humbly, to help.</h2>
+                <hr>
+                <p>We'll get straight to the point: Today we ask you to defend Our's independence.</p>
+                <p>We're a non-profit that depends on donations to stay online and thriving, but 98% of our players don't give; they simply look the other way. If everyone who play gave just a little, we could keep this thriving for years to come. The price of a cup of coffee is all we ask.</p>
+                <p>Flap 'n' Fly is a place to play, not a place for advertising. The heart and soul of Flap 'n' Fly is a community of people working to bring you unlimited access to reliable, neutral play.</p>
+                <p>We know that most people will ignore this message. But if we were useful to you, please consider making a donation of ₹100, ₹200, ₹300 or whatever you can to protect and sustain us.</p>
+                <p>Thanks,</p>
+                <p><b>Team 13</b></p>
+            </div>
+
+            <div class="donate">
+                <h3>Donation</h3>
+                <div class="payment">
+                    <label for="donAmt">Enter the amount you want to donate.</label>
+                    <input type="number" form="donAmt" id="donAmt" placeholder="in rupees">
+
+                    <h4>Select a payment method.</h4>
+                    <button class="collapsible">Debit/ Credit Card</button>
+                    <div class="content">
+                        <form id="cardform">
+                            <label for="cname">Name on Card</label>
+                            <input type="text" name="cname" id="cname" placeholder="Joe Dean">
+                            <label for="cnumber">Card Number</label>
+                            <input type="text" name="cnumber" id="cnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expdate">Valid Thru</label>
+                            <input type="text" name="expdate" id="expdate" placeholder="01/2025">
+                            <label for="cvv">CVV</label>
+                            <input type="text" name="cvv" id="cvv" placeholder="335">
+                        </form>
+                        <h6>Note: We don't save any of your card details on our server.</h6>
+                    </div>
+
+                    <button class="collapsible">Netbanking</button>
+                    <div class="content">
+                        <form class="nbanking">
+                            <label for="nbanking">Choose your bank:</label>
+                            <select id="nbanking" name="nbanking">
+                                <option selected disabled>---Select---</option>
+                                <option value="hdfc">HDFC Bank</option>
+                                <option value="axis">Axis Bank</option>
+                                <option value="icici">ICICI Bank</option>
+                                <option value="sbi">State Bank of India</option>
+                            </select>
+                        </form>
+                        <h6>Note: You will be redirected to your Bank's Netbanking Page.</h6>
+                    </div>
+
+                    <button class="collapsible">UPI</button>
+                    <div class="content">
+                        <form class="upiapp">
+                            <label for="upiapp">Select a UPI Payment App</label>
+                            <select onChange="changeForm(this)" id="extSelect" name="upiapp">
+                                <option selected disabled>---Select---</option>
+                                <option value="phonepe">PhonePe</option>
+                                <option value="gpay">Google Pay</option>
+                                <option value="paytm">Paytm</option>
+                                <option value="apay">Amazon Pay</option>
+                            </select>
+                        </form>
+                        <form name="phonepe" id="phonepe" style="display: none;">
+                            <label for="upi">Enter your PhonePe UPI ID</label>
+                            <input type="text" name="upi" id="upi">
+                        </form>
+                    </div>
+                    <button id="continuepay">Continue to Pay</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/donation.js"></script>
+</html>

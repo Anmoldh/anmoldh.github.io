@@ -21,7 +21,7 @@ html{
 }
 
 .container .section:nth-child(1){
-    background: url("../images/flappy_blur.jpg");
+    background: url("../images/home_bg.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -161,12 +161,13 @@ html{
 }
 
 .container .section:nth-child(2){
-    background: lightgreen;
+    background: url("../images/about_bg.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
 .page02{
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -177,11 +178,11 @@ html{
 
 .abtthisgame, .abtorg{
     border: 2px solid;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 400px){
     .abtthisgame, .abtorg{
         overflow: scroll;
         height: 250px;

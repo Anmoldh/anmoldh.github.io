@@ -1,5 +1,6 @@
 body{
     background: aquamarine;
+    font-family: Arial;
     margin: 0%;
     padding: 0%;
 }
@@ -37,11 +38,13 @@ body{
 .topnavBtns a.active{
     background-color: lightblue;
     color: black;
+    border: whitesmoke;
 }
 
 .topnavBtns a:hover{
     background-color: #ddd;
     color: black;
+    border: whitesmoke;
 }
 
 .pageContent{
@@ -109,4 +112,20 @@ label{
     margin-top: 15px;
     padding: 12px;
     border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    display: none;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

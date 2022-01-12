@@ -1,3 +1,8 @@
+// Exit aleart
+function erralt() {
+    alert("oops! Something went wrong.");
+}
+
 // For Making Collapsible Form or Div
 var coll = document.getElementsByClassName("collapsible");
 var i;

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="assets/css/index.css">
-        <script src="assets/js/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -21,10 +21,18 @@
                             <div class="topnavBtns">
                                 <a href="index.html" class="active">Home</a>
                                 <a href="#htw">How to play?</a>
-                                <a href="#leaderboard">Leaderboard</a>
                                 <a href="#contact">Contact</a>
                                 <a href="#about">About</a>
-                                <!-- <a href="#account">Account</a> -->
+                                <a href="donation.html">Donate us</a>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Account 
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="loginPage.html">Login</a>
+                                      <a href="createAC.html">New here?</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -35,33 +43,58 @@
 
                         <div class="btns">
                             <button onclick="window.location.href='404.html';">Play</button>
-                            <button onclick="window.location.href='donation.html';">Donate us</button>
-                            <button onclick="exitbtn()">Exit</button>
+                            <button onclick="window.location.href='leaderboard.html';">Leaderboard</button>
+                            <button onclick="erralt()">Exit</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <div class="about" id="about">
-                    <div class="abtHead">
-                        <h1>Flap 'n' Fly - Yet another Flappy Bird Game.</h1>
-                    </div>
-                    <div class="paras">
-                        <p>
-                            Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. 
-                            The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights. 
-                            Faby automatically descends and only ascends when the player taps the touchscreen. 
-                            Each successful pass through a pair of pipes awards the player one point. 
-                            Colliding with a pipe or the ground ends the gameplay. 
-                            During the game over screen, the player is awarded a bronze medal if they reached ten or more points, 
-                            a silver medal from twenty points, a gold medal from thirty points, and a platinum medal from forty points.
+                <div class="page02" id="about">
+                    <h1 class="yetanother">Flap 'n' Fly - Yet another Flappy Bird Game.</h1>
+                    <div class="abtthisgame">
+                        <div class="abtthishead">
+                            <h2 class="aboutthisgame">About this Game.</h2>
+                        </div>
+                        <div class="paras">
+                            <p>
+                                Flap 'n' Fly is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. 
+                                The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights. 
+                                Faby automatically descends and only ascends when the player taps the touchscreen. 
+                                Each successful pass through a pair of pipes awards the player one point. 
+                                Colliding with a pipe or the ground ends the gameplay. 
+                                During the game over screen, the player is awarded a bronze medal if they reached ten or more points, 
+                                a silver medal from twenty points, a gold medal from thirty points, and a platinum medal from forty points.
                             </p>
-                            <p>Make sure to check the blog for additional information and updates.</p>
-                            <p>Site and HTML5 game created for IWT FA</p>
+                                <p>Make sure to check the blog for additional information and updates.</p>
+                                <p>Site and HTML5 game created for IWT FA</p>
+                        </div>
+                    </div>
+                    <div class="abtorg">
+                        <div class="abtorghead">
+                            <h2 class="aboutorggame">About orginal Game/ Source.</h2>
+                        </div>
+                        <div class="paras">
+                            <p>
+                                Flappy Bird was a mobile game developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), 
+                                under his game development company .Gears. The game is a side-scroller where the player controls a bird, 
+                                attempting to fly between columns of green pipes without hitting them. Nguyen created the game over the period of several days, 
+                                using a bird protagonist that he had designed for a cancelled game in 2012.
+                            </p>
+                            <p>
+                                The game was released in May 2013 but received a sudden rise in popularity in early 2014 and became a sleeper hit. 
+                                Flappy Bird received poor reviews from some critics, 
+                                who criticized its high level of difficulty and alleged plagiarism in graphics and game mechanics, 
+                                while other reviewers found it addictive. At the end of January 2014, 
+                                it was the most downloaded free game in the App Store for iOS. During this period, 
+                                its developer said that Flappy Bird was earning $50,000 a day from in-app advertisements as well as sales.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+    <script src="assets/js/main.js"></script>
 </html>

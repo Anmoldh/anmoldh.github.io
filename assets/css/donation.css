@@ -1,5 +1,5 @@
 body{
-    background: aquamarine;
+    background-image: linear-gradient(to bottom, grey, lightgrey);
     font-family: Arial;
     margin: 0%;
     padding: 0%;

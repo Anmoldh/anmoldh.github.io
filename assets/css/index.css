@@ -166,22 +166,6 @@ html{
     background-attachment: fixed;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
-}
-  
-::-webkit-scrollbar-track{
-    display: none;
-}
-  
-::-webkit-scrollbar-thumb{
-    background: rgb(128, 128, 128);
-}
-  
-::-webkit-scrollbar-thumb:hover{
-    background: rgb(110, 110, 110);
-}
-
 .yetanother{
     color: whitesmoke;
     font-family: 'Comic Sans MS';
@@ -220,4 +204,20 @@ html{
     text-align: center;
     padding: 3%;
     margin: auto;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track{
+    display: none;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: rgb(128, 128, 128);
+}
+  
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(110, 110, 110);
 }

@@ -166,44 +166,6 @@ html{
     background-attachment: fixed;
 }
 
-.page02{
-    color: whitesmoke;
-    text-align: center;
-}
-
-.yetanother{
-    font-size: 180%;
-    padding: 10px;
-}
-
-.abtthisgame, .abtorg{
-    border: 2px solid;
-    margin: 5px;
-    padding: 5px;
-}
-
-@media (max-width: 400px){
-    .abtthisgame, .abtorg{
-        overflow: scroll;
-        height: 250px;
-        border: 2px solid;
-        margin: 15px;
-        padding: 0px 10px;
-    }
-
-    .abtthishead, .abtorghead{
-        background: lightgreen;
-        position: sticky;
-        top: 0;
-        padding: 5px 0px;
-    }
-}
-
-.paras p{
-    font-family: 'Times New Roman', Times, serif;
-    margin: 2%;
-}
-
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -213,9 +175,49 @@ html{
 }
   
 ::-webkit-scrollbar-thumb{
-    background: #888;
+    background: rgb(128, 128, 128);
 }
   
 ::-webkit-scrollbar-thumb:hover{
-    background: #555;
+    background: rgb(110, 110, 110);
+}
+
+.yetanother{
+    color: whitesmoke;
+    font-family: 'Comic Sans MS';
+    font-size: 150%;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.howtoplay{
+    background-color: rgba(128, 128, 128, 0.500);
+    display: flex;
+    flex-direction: row;
+    font-family: cursive;
+    border-radius: 15px;
+    margin: 3%;
+}
+
+@media (max-width: 800px){
+    .howtoplay{
+        flex-direction: column-reverse;
+        font-family: monospace;
+    }
+}
+
+.exphtp{
+    padding: 3%;
+    flex: 2;
+}
+
+.exphtp li{
+    margin: 2%;
+}
+
+.wasd{
+    flex: 1;
+    text-align: center;
+    padding: 3%;
+    margin: auto;
 }

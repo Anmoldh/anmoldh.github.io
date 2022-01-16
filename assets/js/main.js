@@ -19,15 +19,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-// For Showing different form based on selected
-function changeForm(form) {
-  for (var i=0; i<form.length; i++){
-    var form_op = form.options[i].value;
-    if (form_op == form.value) {
-      document.getElementsByName(form_op)[0].style.display = "block";
-    }
-    else {
-      document.getElementsByName(form_op)[0].style.display = "none";
-    }
-   }
-  }
+// Copy Div
+var firstDivContent = document.getElementById('copyfromdiv');
+var secondDivContent = document.getElementById('pasteherediv');
+secondDivContent.innerHTML = firstDivContent.innerHTML;

@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(39, 43, 48);
+    font-family: helvetica neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navCont{
+    background: rgb(69, 75, 82);
+    position: sticky;
+    top: 0;
+}
+
+.dropdown-content{
+    background-color: rgb(69, 75, 82);
+}
+
+.pageContent{
+    color: #c8c8c8;
+    text-align: center;
+}
+
+.cheaterswarn{
+    font-family: monospace;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+caption{
+    color: rgb(122, 130, 136);
+    font-size: 20px;
+}
+
+table, tr, td{
+    border: 1px solid rgb(28, 30, 34);
+    border-collapse: collapse;
+    background-color: rgb(46, 51, 56);
+    padding: 10px;
+}

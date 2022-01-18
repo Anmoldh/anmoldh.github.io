@@ -1,5 +1,7 @@
 body{
-    background-image: linear-gradient(to bottom, grey, lightgrey);
+    background-image: url("../images/donation_bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial;
     margin: 0%;
     padding: 0%;
@@ -18,16 +20,26 @@ body{
 }
 
 .gratitude{
-    padding: 3%;
+    background-color: rgba(128, 128, 128, 0.7);
+    color: white;
+    height: fit-content;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 10px;
     flex: 1;
 }
 
 .donate{
-    background: rgba(128, 128, 128, 0.500);
+    background: rgba(128, 128, 128, 0.7);
     flex: 1;
     border: 2px solid black;
+    border-radius: 10px;
     margin: 3%;
     padding: 2%;
+}
+
+#donAmt{
+    width: 50%;
 }
 
 input, select{

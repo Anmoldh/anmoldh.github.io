@@ -31,15 +31,22 @@ body{
     font-size: 300%;
     margin: 10px;
     padding: 10px;
-    pointer-events: none;
     border-radius: 15px;
     display: table;
+    transition-property: background-color color;
+    transition-duration: 10s;
+}
+
+.captionDiv:hover{
+    background-color: white;
+    color: black;
 }
 
 .caption{
     display: table-cell;
     text-align: center;
-    vertical-align: middle;  
+    vertical-align: middle;
+    pointer-events: none;
 }
 
 @media (max-width: 800px){

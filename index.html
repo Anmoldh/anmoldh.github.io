@@ -9,6 +9,7 @@
         <link rel="icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="assets/css/navbar.css">
         <link rel="stylesheet" href="assets/css/scrollbar.css">
+        <link rel="stylesheet" href="assets/css/modal.css">
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -51,9 +52,42 @@
                         </div>
 
                         <div class="btns">
-                            <button onclick="document.getElementById('loginModal').style.display='block'">Play</button>
+                            <button id="openModal">Play</button>
                             <button onclick="window.location.href='leaderboard.html';">Leaderboard</button>
                             <button onclick="erralt()">Exit</button>
+                        </div>
+
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <div class="closeDiv">
+                                    <span class="close">&times;</span>
+                                </div>
+                                <div class="modalHolder">
+                                    <div class="logtocont">
+                                        <h1>Login & Get identity!</h1>
+                                    
+                                        <div class="loginForm">
+                                            <label for="uname">Username</label>
+                                            <input type="text" id="uname" name="uname" placeholder="Enter your Username" required>
+                        
+                                            <label for="pass">Password</label>
+                                            <input type="password" id="pass" name="pass" placeholder="Enter your Password" required>
+                                            
+                                            <button onclick="window.location.href='play.html';">Continue</button>
+                                        </div>
+                                    </div>
+                                    <div class="orDiv">
+                                        <div class="or">
+                                            <h1>OR</h1>
+                                        </div>
+                                    </div>
+                                    <div class="anonplayDiv" onclick="location.href='play.html';">
+                                        <div class="anonplay">
+                                            <h1><i class="fa fa-user-secret"></i> Play Anonymously</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,4 +132,5 @@
         </div>
     </body>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
 </html>

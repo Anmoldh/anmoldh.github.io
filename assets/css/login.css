@@ -1,0 +1,102 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.navCont{
+    background: #002080;
+    position: sticky;
+    top: 0;
+}
+
+.dropdown-content{
+    background-color: #002080;
+}
+
+.divHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.captionDiv{
+    flex: 1;
+    background-color: #002080;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    margin: 10px;
+    padding: 10px;
+    pointer-events: none;
+    border-radius: 15px;
+    display: table;
+}
+
+.caption{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;  
+}
+
+@media (max-width: 800px){
+    .divHolder{
+        flex-direction: column;
+    }
+
+    .captionDiv{
+        font-size: 225%;
+    }
+}
+
+.loginDiv{
+    flex: 1;
+    background-color: chocolate;
+    margin: 10px;
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px black;
+    font-weight: 700;
+}
+
+.loginDiv button{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px black;
+    font-weight: 700;
+}
+
+.loginDiv button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+hr{
+    width: 50%;
+}
+
+.signup{
+    text-align: center;
+}
+
+.loginDiv p{
+    font-weight: 500;
+}

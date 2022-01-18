@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flap 'n' Fly | Login</title>
+        <meta name="description" content="Scaled Down Flappy Bird">
+        <meta name="author" content="Anmol, Agrim, Aman, Archit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/scrollbar.css">
+        <link rel="stylesheet" href="assets/css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="navCont">
+            <div class="topNav">
+                <a href="index.html" id="textLogo">Flap 'n' Fly</a>
+                <div class="topnavBtns" id="copyfromdiv">
+                    <a href="index.html">Home</a>
+                    <a href="#htp">How to play?</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="donation.html">Donate us</a>
+                    <div class="dropdown">
+                        <button class="dropbtn active">Account 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="login.html" class="active">Login</a>
+                          <a href="signup.html">New here?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown resdrop">
+                    <button class="dropbtn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content" id="pasteherediv">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divHolder">
+            <div class="captionDiv">
+                <div class="caption">
+                    <h1>Welcome Back!</h1>
+                </div>
+            </div>
+
+            <div class="loginDiv">
+                <div class="loginText">
+                    <h1>Sign-in</h1>
+                </div>
+                <div class="loginForm">
+                    <label for="uname">Username</label>
+                    <input type="text" id="uname" name="uname" placeholder="Enter your Username" required>
+
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass" placeholder="Enter your Password" required>
+                    
+                    <button onclick="window.location.href='index.html';">Continue</button>
+                    <p>By continuing, you agree to Flap 'n' Fly's Conditions of Use and Privacy Notice.</p>
+                </div>
+                <hr>
+                <div class="signup">
+                    <p>New to Flap 'n' Fly?</p>
+                    <button button onclick="window.location.href='signup.html';">Create your account</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/main.js"></script>
+</html>

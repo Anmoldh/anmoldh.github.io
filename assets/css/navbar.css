@@ -26,7 +26,7 @@
     border-right: 1px solid;
 }
 
-.topnavBtns a.active, .resdrop a.active{
+.topnavBtns .active, .resdrop .active{
     background-color: lightblue;
     color: black;
     border: whitesmoke;

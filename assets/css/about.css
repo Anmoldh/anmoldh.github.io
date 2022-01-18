@@ -6,6 +6,8 @@ body{
 
 .navCont{
     background: #C0284C;
+    position: sticky;
+    top: 0;
 }
 
 .dropdown-content{
@@ -99,20 +101,4 @@ table, tr, td{
     border-collapse: collapse;
     text-align: center;
     width: 250px;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-  
-::-webkit-scrollbar-track {
-    display: none;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
 }

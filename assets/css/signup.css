@@ -59,9 +59,13 @@ body{
     }
 }
 
+.signupText{
+    text-align: center;
+}
+
 .signupDiv{
     flex: 1;
-    background-color: chocolate;
+    background-color: lightblue;
     margin: 10px;
     padding: 20px 40px;
     border-radius: 15px;

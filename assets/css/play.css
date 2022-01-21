@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navCont{
+    background: rgb(69, 75, 82);
+    position: sticky;
+    top: 0;
+}
+
+.dropdown-content{
+    background-color: rgb(69, 75, 82);
+}
+
+canvas{
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}

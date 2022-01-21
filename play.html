@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flap 'n' Fly | Play</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Scaled Down Flappy Bird">
+        <meta name="author" content="Anmol, Agrim, Aman, Archit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/scrollbar.css">
+        <link rel="stylesheet" href="assets/css/play.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body onload="startGame()">
+        <div class="navCont">
+            <div class="topNav">
+                <a href="index.html" id="textLogo">Flap 'n' Fly</a>
+                <div class="topnavBtns" id="copyfromdiv">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#htp">How to play?</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="donation.html">Donate us</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Account 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="login.html">Login</a>
+                          <a href="signup.html">New here?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown resdrop">
+                    <button class="dropbtn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content" id="pasteherediv">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gameArea" id="gameArea">
+        </div>
+    </body>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/game.js"></script>
+</html>

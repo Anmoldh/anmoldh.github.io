@@ -6,7 +6,7 @@ var mySound;
 
 function startGame() {
     myGameArea.start();
-    myGamePiece = new component(60, 60, "assets/images/flappy.gif", 10, 120, "image");
+    myGamePiece = new component(40, 40, "assets/images/game_bird.gif", 10, 120, "image");
     myObstacles = [];
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myBackground = new component(656, 270, "assets/images/canvas_bg.png", 0, 0, "background");
@@ -19,7 +19,7 @@ var myGameArea = {
         this.canvas.width = 480;
         this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        document.getElementById("gameArea").insertBefore(this.canvas, document.getElementById("gameArea").childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         window.addEventListener('keydown', function(e){
@@ -27,10 +27,6 @@ var myGameArea = {
         })
         window.addEventListener('keyup', function(e){
             myGameArea.key = false;
-        })
-        window.addEventListener('touchmove', function(e){
-            myGameArea.x = e.touches[0].screenX;
-            myGameArea.y = e.touches[0].screenY;
         })
     },
 
@@ -150,6 +146,8 @@ function updateGameArea(){
         if (myGamePiece.crashWith(myObstacles[i])){
             mySound.play();
             myGameArea.stop();
+            showRestart();
+            hideHint();
             return;
         }
     }
@@ -177,7 +175,6 @@ function updateGameArea(){
     myScore.update();
     accelerate(0.05)
     if (myGameArea.key && myGameArea.key == 32){accelerate(-0.1)}
-    if (myGameArea.x && myGameArea.y){accelerate(-0.1)}
     myGamePiece.newPos();
     myGamePiece.update();
 }
@@ -186,8 +183,30 @@ function accelerate(n){
     myGamePiece.gravity = n;
 }
 
-function restartGame() {
+function restartGame(){
     myGameArea.stop();
     myGameArea.clear();
     startGame();
+}
+
+function hideStart(){
+    document.getElementById("startbtn").style.display = "none";
+}
+
+function showRestart(){
+    document.getElementById("restartbtn").style.display = "block";
+}
+
+function hideRestart(){
+    document.getElementById("restartbtn").style.display = "none";
+}
+
+function showHint(){
+    document.getElementById("hint").style.display = "block";
+}
+
+function hideHint(){
+    if (document.getElementById("restartbtn").style.display == "block"){
+        document.getElementById("hint").style.display = "none";
+    }
 }

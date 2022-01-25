@@ -45,21 +45,28 @@
 
         <div class="pageContent">
             <div class="gratitude">
-                <h2>We ask you, humbly, to help.</h2>
+                <h2><span>We ask you, humbly, to help.</span></h2>
                 <hr>
-                <p>We'll get straight to the point: Today we ask you to defend Our's independence.</p>
-                <p>We're a non-profit that depends on donations to stay online and thriving, but 98% of our players don't give; they simply look the other way. If everyone who play gave just a little, we could keep this thriving for years to come. The price of a cup of coffee is all we ask.</p>
-                <p>Flap 'n' Fly is a place to play, not a place for advertising. The heart and soul of Flap 'n' Fly is a community of people working to bring you unlimited access to reliable, neutral play.</p>
-                <p>We know that most people will ignore this message. But if we were useful to you, please consider making a donation of ₹100, ₹200, ₹300 or whatever you can to protect and sustain us.</p>
-                <p>Thanks,</p>
-                <p><b>Team 13</b></p>
+                <p><span>We'll get straight to the point: Today we ask you to defend Our's independence.</span></p>
+                <p><span>We're a non-profit that depends on donations to stay online and thriving, but 98% of our players don't give; they simply look the other way. If everyone who play gave just a little, we could keep this thriving for years to come. The price of a cup of coffee is all we ask.</span></p>
+                <p><span>Flap 'n' Fly is a place to play, not a place for advertising. The heart and soul of Flap 'n' Fly is a community of people working to bring you unlimited access to reliable, neutral play.</span></p>
+                <p><span>We know that most people will ignore this message. But if we were useful to you, please consider making a donation of ₹100, ₹200, ₹300 or whatever you can to protect and sustain us.</span></p>
+                <p><span>Thanks,</span></p>
+                <p><b><span>Team 13</span></b></p>
             </div>
 
             <div class="donate">
                 <h3>Donation</h3>
                 <div class="payment">
-                    <label for="donAmt">Enter the amount you want to donate.</label>
-                    <input type="text" form="donAmt" id="donAmt" placeholder="in rupees">
+                    <div class="donateAmt">
+                        <h5>Select a Amount you wish to donate</h5>
+                        <button id="50" onclick="donationAlert(this.id)">&#8377; 50</button>
+                        <button id="100" onclick="donationAlert(this.id)">&#8377; 100</button>
+                        <button id="200" onclick="donationAlert(this.id)">&#8377; 200</button>
+                        <button id="500" onclick="donationAlert(this.id)">&#8377; 500</button>
+                        <h6>Or Enter Manually</h6>
+                        <input type="text" placeholder="Enter your Desired Amount">
+                    </div>
 
                     <h4>Select a payment method.</h4>
                     <button class="collapsible">Debit/ Credit Card</button>
@@ -115,7 +122,7 @@
                             <input type="text" name="upi" id="upi">
                         </form>
                     </div>
-                    <button class="continuepay">Continue to Pay</button>
+                    <button class="continuepay" onclick="payAlert()">Continue to Pay</button>
                 </div>
             </div>
         </div>

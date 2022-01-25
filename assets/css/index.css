@@ -187,6 +187,10 @@ html{
     margin: 3%;
 }
 
+.howtoplay a{
+    color: whitesmoke;
+}
+
 @media (max-width: 800px){
     .howtoplay{
         flex-direction: column-reverse;

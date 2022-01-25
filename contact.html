@@ -61,49 +61,51 @@
             </div>
             
             <div class="contactform">
-                <div class="left">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" required>
-                </div>
-                <div class="left">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname">
-                </div>
+                <form>
+                    <div class="left">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="left">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
 
-                <div class="clear">&nbsp;</div>
-
-                <div class="left">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="left">
-                    <label for="pnumber">Phone Number</label>
-                    <input type="tel" id="pnumber" name="pnumber">
-                </div>
-
-                <div class="clear">&nbsp;</div>
-
-                <div class="whycontact">
-                    <label for="why">You are contacting us for?</label>
-                    
                     <div class="clear">&nbsp;</div>
 
-                    <input type="radio" id="feedback" name="why" value="feedback">
-                    <label for="feedback">Feedback</label>
+                    <div class="left">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="left">
+                        <label for="pnumber">Phone Number</label>
+                        <input type="tel" id="pnumber" name="pnumber">
+                    </div>
 
-                    <input type="radio" id="bug" name="why" value="bug">
-                    <label for="bug">Bug</label>
-                </div>
+                    <div class="clear">&nbsp;</div>
 
-                <div class="clear">&nbsp;</div>
+                    <div class="whycontact">
+                        <label for="why">You are contacting us for?</label>
+                        
+                        <div class="clear">&nbsp;</div>
 
-                <div class="message">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
-                </div>
-                <div class="sendbtn">
-                    <button>Send Message</button>
-                </div>
+                        <input type="radio" id="feedback" name="why" value="feedback">
+                        <label for="feedback">Feedback</label>
+
+                        <input type="radio" id="bug" name="why" value="bug">
+                        <label for="bug">Bug</label>
+                    </div>
+
+                    <div class="clear">&nbsp;</div>
+
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="sendbtn">
+                        <button type="submit" onclick="confAlert()">Send Message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>

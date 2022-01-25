@@ -1,5 +1,7 @@
 body{
-    background-color: #0E0B16;
+    background-image: url("../images/donation_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial;
     margin: 0%;
     padding: 0%;
@@ -26,9 +28,16 @@ body{
 }
 
 .gratitude{
-    color: white;
+    color: black;
+    font-weight: 700;
     padding: 3%;
     flex: 1;
+}
+
+.gratitude span{
+    background-color: burlywood;
+    border-radius: 2px;
+    padding: 2px;
 }
 
 .donate{
@@ -40,8 +49,23 @@ body{
     padding: 2%;
 }
 
-#donAmt{
-    width: 50%;
+.donateAmt h5, .donateAmt h6{
+    margin: 10px 0 5px 0;
+}
+
+.donateAmt button{
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    background: white;
+}
+
+.donateAmt button:hover{
+    background: wheat;
+}
+
+.donateAmt button:active{
+    background-color: #A239CA;
 }
 
 input, select{

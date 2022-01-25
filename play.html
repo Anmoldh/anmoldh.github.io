@@ -13,13 +13,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body onload="startGame()">
+    <body>
         <div class="navCont">
             <div class="topNav">
                 <a href="index.html" id="textLogo">Flap 'n' Fly</a>
                 <div class="topnavBtns" id="copyfromdiv">
                     <a href="index.html" class="active">Home</a>
-                    <a href="#htp">How to play?</a>
+                    <a href="index.html#htp">How to play?</a>
                     <a href="contact.html">Contact</a>
                     <a href="about.html">About</a>
                     <a href="donation.html">Donate us</a>
@@ -43,7 +43,19 @@
             </div>
         </div>
 
-        <div class="gameArea" id="gameArea">
+        <div class="gameArea" id="gameArea"></div>
+
+        <div id="hint" style="display: none;">
+            <p><i class="fa fa-info-circle" style="color: lightskyblue;"></i> Use SPACEBAR to keep the bird flying</p>
+        </div>
+
+        <div id="startbtn" class="startbtn">
+            <button class="glowbtn" onclick="startGame(), hideStart(), showHint()">Tap here to Start</button>
+        </div>
+
+        <div id="restartbtn" class="restartbtn">
+            <p>oops! Looks like you died</p>
+            <button class="glowbtn" onclick="restartGame(), hideRestart(), showHint()">Restart from Here</button>
         </div>
     </body>
     <script src="assets/js/main.js"></script>

@@ -1,5 +1,8 @@
 body{
     background-color: whitesmoke;
+    background-image: url("../images/account_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
@@ -69,6 +72,7 @@ body{
     margin: 10px;
     padding: 20px 40px;
     border-radius: 15px;
+    text-align: center;
 }
 
 label{
@@ -78,25 +82,27 @@ label{
 }
 
 input{
-    display: block;
+    width: 60%;
     margin-bottom: 20px;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid;
+    border-top: none;
     border-radius: 5px;
-    box-shadow: 0px 5px 5px 0px black;
     font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .signupDiv button{
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px 0px black;
     font-weight: 700;
+    width: 120px;
 }
 
 .signupDiv button:hover{
-    background-color: white;
+    background-color: #002080;
+    color: white;
     cursor: pointer;
 }
 

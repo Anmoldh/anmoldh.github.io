@@ -64,3 +64,24 @@ function verifyPass(){
     alert("Account Created Sucessfully!")
   }
 }
+
+// Random Facts (play.html) // JQuery
+$(document).ready(function() {
+
+  var $divs = $(".randomFacts div").hide(),
+      current = 0;
+  
+  $divs.eq(0).show();
+
+  function showNext() {
+      if (current < $divs.length - 1) {
+          $divs.eq(current).delay(5000).fadeOut('fast', function() {
+              current++;
+              $divs.eq(current).fadeIn('fast');
+              showNext();
+          });
+      }
+  }
+  showNext();
+  
+});

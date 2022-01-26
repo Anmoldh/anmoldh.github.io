@@ -50,14 +50,41 @@
         </div>
 
         <div id="startbtn" class="startbtn">
-            <button class="glowbtn" onclick="startGame(), hideStart(), showHint()">Tap here to Start</button>
+            <button class="glowbtn" onclick="startGame(), hideStart(), showHint(), hideRF()">Tap here to Start</button>
         </div>
 
         <div id="restartbtn" class="restartbtn">
             <p>oops! Looks like you died</p>
             <button class="glowbtn" onclick="restartGame(), hideRestart(), showHint()">Restart from Here</button>
         </div>
+
+        <div class="randomDiv" id="rfDiv">
+            <h4><i class="fa fa-info-circle" style="color: lightskyblue;"></i> Do you know?</h4>
+            <div class="randomFacts">
+                <div id="rfdiv1">The Gameboy was the first video game console played in space.</div>
+                <div id="rfdiv2">Monster Hunter 3 Ultimate is the longest-running game ever.</div>
+                <div id="rfdiv3">Minecraft is the best-selling video game so far.</div>
+                <div id="rfdiv4">Super Mario Land is darker than you thought.</div>
+                <div id="rfdiv5">The biggest video game collection has a library of over 20,000 games.</div>
+                <div id="rfdiv6">The PlayStation 2 is the best-selling gaming console of all time.</div>
+                <div id="rfdiv7">The longest video game session lasted 138 hours and 34 seconds.</div>
+                <div id="rfdiv8">A gamer completed Dark Souls using a Rock Band guitar.</div>
+                <div id="rfdiv9">The first E sports tournament was held in the 70s.</div>
+                <div id="rfdiv10">The youngest professional gamer was 11 years old.</div>
+                <div id="rfdiv11">Pokemon Red and Green were the best-selling GameBoy games.</div>
+                <div id="rfdiv12">The earliest RPG on a console was released in 1982.</div>
+                <div id="rfdiv13">Grand Theft Auto was supposed to be a racing game.</div>
+                <div id="rfdiv14">Minecraft's overworld has a surface area 9,258,235 times larger than the earth.</div>
+                <div id="rfdiv15">People who play video games are more likely to be lucid dreamers than those who don't.</div>
+                <div id="rfdiv16">There is a hiding spot in Pac-Man where you can be safe.</div>
+                <div id="rfdiv17">A Japanese man married a video game character in 2009.</div>
+                <div id="rfdiv18">The earliest “video” game was a shooting game.</div>
+                <div id="rfdiv19">The Nintendo Switch is the only commercial hybrid console to date.</div>
+                <div id="rfdiv20">End of Facts! Google it for more.</div>
+            </div>
+        </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/game.js"></script>
 </html>

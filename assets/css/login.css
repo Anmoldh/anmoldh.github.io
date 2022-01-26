@@ -27,7 +27,7 @@ body{
 
 .captionDiv{
     flex: 1;
-    background-color: #002080;
+    background-color: #002080d5;
     color: whitesmoke;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -41,7 +41,7 @@ body{
 }
 
 .captionDiv:hover{
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 
@@ -64,7 +64,7 @@ body{
 
 .loginDiv{
     flex: 1;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.850);
     margin: 10px;
     padding: 20px 40px;
     border-radius: 15px;

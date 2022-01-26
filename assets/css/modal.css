@@ -15,6 +15,7 @@
   
   /* Modal Content */
 .modal-content{
+    background-image: url("../images/modal_bg.png");
     background-color: #fefefe;
     margin: auto;
     padding: 20px;

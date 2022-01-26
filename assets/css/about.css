@@ -102,3 +102,8 @@ table, tr, td{
     text-align: center;
     width: 250px;
 }
+
+.knowmore{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -88,38 +88,42 @@ html{
     flex: 2;
     padding: 20px;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.850);
+    text-align: center;
 }
 
 .logtocont h1{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .modal label, .modal input, .modal button{
     display: block;
-    text-align: left;
     font-weight: bold;
+    margin: auto;
 }
 
 .modal input{
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 60%;
     margin-bottom: 20px;
-    box-shadow: 0px 5px 5px 0px black;
+    padding: 8px;
+    border: 2px solid;
+    border-top: none;
+    border-radius: 5px;
     font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .modal button{
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px 0px black;
     font-weight: 700;
+    width: 120px;
 }
 
 .modal button:hover{
-    background-color: white;
+    background-color: #002080;
+    color: white;
     cursor: pointer;
 }
 
@@ -141,12 +145,12 @@ html{
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgb(2, 41, 105);
+    background-color: #002080d5;
     color: whitesmoke;
 }
 
 .anonplayDiv:hover{
-    background-color: rgba(2, 42, 105, 0.8);
+    background-color: rgba(245, 245, 245, 0.4);
 }
 
 .anonplay{

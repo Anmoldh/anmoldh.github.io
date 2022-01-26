@@ -210,3 +210,7 @@ function hideHint(){
         document.getElementById("hint").style.display = "none";
     }
 }
+
+function hideRF(){
+    document.getElementById("rfDiv").style.display = "none";
+}

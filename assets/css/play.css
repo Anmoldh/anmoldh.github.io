@@ -17,6 +17,14 @@ body{
 .startbtn, .restartbtn{
     text-align: center;
     margin: 5%;
+    z-index: -1;
+}
+
+.startbtn{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    right: 0%;
 }
 
 .restartbtn{
@@ -99,4 +107,15 @@ p{
 canvas{
     border: 1px solid #d3d3d3;
     background-color: #f1f1f1;
+}
+
+.randomDiv{
+    font-family: monospace;
+    font-size: 120%;
+    color: #c8c8c8;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    right: 0%;
 }

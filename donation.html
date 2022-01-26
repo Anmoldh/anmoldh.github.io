@@ -107,20 +107,11 @@
 
                     <button class="collapsible">UPI</button>
                     <div class="content">
-                        <form class="upiapp">
-                            <label for="upiapp">Select a UPI Payment App</label>
-                            <select onChange="changeForm(this)" id="extSelect" name="upiapp">
-                                <option selected disabled>---Select---</option>
-                                <option value="phonepe">PhonePe</option>
-                                <option value="gpay">Google Pay</option>
-                                <option value="paytm">Paytm</option>
-                                <option value="apay">Amazon Pay</option>
-                            </select>
+                        <form class="upiid">
+                            <label for="upiid">Enter your UPI ID.</label>
+                            <input type="text" id="upiid" placeholder="abcdefu@upi">
                         </form>
-                        <form name="phonepe" id="phonepe" style="display: none;">
-                            <label for="upi">Enter your PhonePe UPI ID</label>
-                            <input type="text" name="upi" id="upi">
-                        </form>
+                        <h6>Note: We'll send a UPI request to your UPI ID.</h6>
                     </div>
                     <button class="continuepay" onclick="payAlert()">Continue to Pay</button>
                 </div>
